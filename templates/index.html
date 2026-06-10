@@ -3,69 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bal AI</title>
+    <title>Bal AI — Værktøjer til SAF-T-validering og momsanalyse</title>
+    <meta name="description" content="Danske værktøjer til validering af SAF-T-filer, momsanalyse, VIES-kontrol og ERP-dataudtræk. Bygget til rådgivere og økonomifunktioner.">
+    <meta property="og:title" content="Bal AI — SAF-T-validering og momsanalyse">
+    <meta property="og:description" content="Validér SAF-T-filer mod den danske standard, analysér momsdata og kontrollér EU-momsnumre.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.balai.dk">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231B365D'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='17' font-weight='600' fill='white' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="/static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="page">
-        <!-- Hero -->
-        <header class="hero">
-            <div class="logo">
-                <span class="logo-icon">&#9670;</span>
-                <span class="logo-text">Bal AI</span>
+
+        <header class="topbar">
+            <div class="wordmark">
+                <span class="wordmark-mark" aria-hidden="true">B</span>
+                <span class="wordmark-text">Bal AI</span>
             </div>
-            <p class="tagline">Testmilj&oslash; for validering af SAF-T filer samt VAT Analytics</p>
         </header>
 
-        <!-- Products -->
-        <section class="products">
-            <h2 class="section-title">Produkter</h2>
-            <div class="product-grid">
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <h1>Validér dine regnskabsdata, før Skattestyrelsen gør det</h1>
+                <p class="hero-sub">Specialiserede værktøjer til SAF-T-validering, momsanalyse og datakontrol — bygget til danske rådgivere og økonomifunktioner.</p>
+                <p class="hero-cta">
+                    <a class="btn-primary" href="https://saft.balai.dk">Gå til SAF-T Validator</a>
+                </p>
+            </section>
 
-                <!-- SAF-T Validator -->
-                <a href="https://saft.balai.dk" class="product-card live">
-                    <div class="product-badge badge-live">Live</div>
-                    <div class="product-icon">&#128196;</div>
-                    <h3>SAF-T Validator</h3>
-                    <p>Valid&eacute;r dine SAF-T filer mod den danske SAF-T 1.0 og 2.0 standard. F&aring; konkrete l&oslash;sningsforslag til fejl.</p>
-                    <span class="product-link">saft.balai.dk &rarr;</span>
-                </a>
+            <!-- Fakta-bånd -->
+            <section class="factband" aria-label="Nøglefakta">
+                <div class="fact"><span class="fact-value">SAF-T 1.0 + 2.0</span><span class="fact-label">Dansk standard, XSD og forretningsregler</span></div>
+                <div class="fact"><span class="fact-value">Skattestyrelsens kontrolmetoder</span><span class="fact-label">som grundlag for momsanalyserne</span></div>
+                <div class="fact"><span class="fact-value">PDF og CSV</span><span class="fact-label">Rapporter til revision og videre arbejde</span></div>
+            </section>
 
-                <!-- VAT Analytics -->
-                <a href="https://vat.balai.dk" class="product-card live">
-                    <div class="product-badge badge-live">Live</div>
-                    <div class="product-icon">&#128200;</div>
-                    <h3>VAT Analytics</h3>
-                    <p>Momsanalyse fra Excel/CSV data. 103 automatiserede tests baseret p&aring; Skattestyrelsens kontrolmetoder.</p>
-                    <span class="product-link">vat.balai.dk &rarr;</span>
-                </a>
+            <!-- Produkter -->
+            <section class="products" aria-labelledby="products-heading">
+                <h2 id="products-heading">Produkter</h2>
 
-                <!-- VIES Validation -->
-                <a href="https://vies.balai.dk" class="product-card live">
-                    <div class="product-badge badge-live">Live</div>
-                    <div class="product-icon">&#127760;</div>
-                    <h3>VIES Validation</h3>
-                    <p>Valid&eacute;r EU-momsnumre mod EU&apos;s VIES-database. Upload Excel med momsnumre og f&aring; status, firmanavn og adresse.</p>
-                    <span class="product-link">vies.balai.dk &rarr;</span>
-                </a>
+                <ul class="product-list">
+                    <li class="product-row">
+                        <div class="product-info">
+                            <h3><a href="https://saft.balai.dk">SAF-T Validator</a></h3>
+                            <p>Validér SAF-T-filer mod den danske 1.0- og 2.0-standard. Strukturerede fejlrapporter med konkrete løsningsforslag, klar til revision.</p>
+                        </div>
+                        <div class="product-meta">
+                            <span class="status status-live"><span class="status-dot" aria-hidden="true"></span>I drift</span>
+                            <span class="product-domain">saft.balai.dk</span>
+                        </div>
+                    </li>
 
-                <!-- VAT Extract -->
-                <a href="https://vat-extract.balai.dk" class="product-card live">
-                    <div class="product-badge badge-live">Live</div>
-                    <div class="product-icon">&#128228;</div>
-                    <h3>VAT Extract</h3>
-                    <p>Gener&eacute;r f&aelig;rdige scripts til at udtr&aelig;kke momsdata fra dit ERP-system. Underst&oslash;tter SAP, D365, Business Central og e-conomic.</p>
-                    <span class="product-link">vat-extract.balai.dk &rarr;</span>
-                </a>
+                    <li class="product-row">
+                        <div class="product-info">
+                            <h3><a href="https://vat.balai.dk">VAT Analytics</a></h3>
+                            <p>Momsanalyse af Excel- og CSV-data med automatiserede tests baseret på Skattestyrelsens kontrolmetoder.</p>
+                        </div>
+                        <div class="product-meta">
+                            <span class="status status-live"><span class="status-dot" aria-hidden="true"></span>I drift</span>
+                            <span class="product-domain">vat.balai.dk</span>
+                        </div>
+                    </li>
 
-            </div>
-        </section>
+                    <li class="product-row">
+                        <div class="product-info">
+                            <h3><a href="https://vies.balai.dk">VIES Validation</a></h3>
+                            <p>Kontrollér EU-momsnumre mod EU's VIES-database. Upload et Excel-ark og få status, firmanavn og adresse retur.</p>
+                        </div>
+                        <div class="product-meta">
+                            <span class="status status-live"><span class="status-dot" aria-hidden="true"></span>I drift</span>
+                            <span class="product-domain">vies.balai.dk</span>
+                        </div>
+                    </li>
 
-        <!-- Footer -->
+                    <li class="product-row">
+                        <div class="product-info">
+                            <h3><a href="https://vat-extract.balai.dk">VAT Extract</a></h3>
+                            <p>Generér færdige scripts til udtræk af momsdata fra dit ERP-system. Understøtter SAP, D365, Business Central og e-conomic.</p>
+                        </div>
+                        <div class="product-meta">
+                            <span class="status status-live"><span class="status-dot" aria-hidden="true"></span>I drift</span>
+                            <span class="product-domain">vat-extract.balai.dk</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
         <footer class="footer">
-            <p>&copy; 2026 Bal AI &middot; balai.dk</p>
+            <p>© 2026 Bal AI · balai.dk</p>
         </footer>
     </div>
 </body>
